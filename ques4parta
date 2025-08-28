@@ -1,0 +1,27 @@
+// concatenate two strings
+# include <iostream>
+using namespace std;
+int main(){
+char str1[20], str2[20];
+cout <<"Enter the string 1 : ";
+cin>> str1;
+cout <<"Enter the string 2 : ";
+cin>> str2;
+int size1=0,i=0, size2=0 ,j=0;
+while (str1[i] != '\0'){
+size1++; i++;}
+while (str2[j] != '\0'){
+size2++;
+j++;
+}
+cout <<"The size of the string 1 is : "<<size1;
+cout <<"\n";
+cout <<"The size of the string 2 is : "<<size2;
+i=0;
+cout <<"\n";
+while (i <= size2){
+str1[i+size1]= str2[i];
+i++;
+}
+cout<<str1;
+} 
